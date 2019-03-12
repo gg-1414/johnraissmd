@@ -1,0 +1,74 @@
+/* Default Header Stylings */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f6f6f6;
+  z-index: 10000;
+  height: 180px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+header div {
+  width: 95%;
+  max-width: 69em;
+  max-width: 85em;
+  margin: 0 auto;
+  padding: 0 1.875em;
+}
+
+header h1,
+header nav {
+  display: inline-block;
+}
+
+header h1,
+header nav a {
+  line-height: 180px;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 4px;
+  font-size: 3.8em;
+  margin: 0;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  color: #aaa;
+  font-weight: 700;
+  margin: 0 0 0 20px;
+  font-size: 1.2em;
+}
+
+header nav a:hover {
+  color: #333;
+}
+
+/* Here starts sticky effect class code */
+
+header.header--sticky-shrink {
+  height: 90px;
+}
+
+header.header--sticky-shrink h1,
+header.header--sticky-shrink nav a {
+  line-height: 90px;
+}
+
+header.header--sticky-shrink h1 {
+  font-size: 2em;
+}
