@@ -16,3 +16,14 @@ body {
 a {
   text-decoration: none;
 }
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  color: #333;
+}
