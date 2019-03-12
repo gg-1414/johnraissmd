@@ -72,3 +72,68 @@ header.header--sticky-shrink nav a {
 header.header--sticky-shrink h1 {
   font-size: 2em;
 }
+
+/* Here starts media queries */
+
+@media screen and (max-width: 880px) {
+  header div {
+    width: 100%;
+  }
+
+  header h1,
+  header nav {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+  }
+
+  header h1 {
+    line-height: 120px;
+  }
+
+  header nav a {
+    line-height: 50px;
+    margin: 0 10px;
+  }
+
+  header.header--sticky-shrink h1,
+  header.header--sticky-shrink nav a {
+    line-height: 45px;
+  }
+
+  header.header--sticky-shrink h1 {
+    font-size: 2em;
+  }
+
+  header.header--sticky-shrink nav a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  header h1 {
+    font-size: 2.8em;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header nav a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  header nav a,
+  header.header--sticky-shrink nav a {
+    line-height: 1;
+  }
+}
