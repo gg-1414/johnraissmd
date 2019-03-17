@@ -6,7 +6,7 @@ const Header = ({ navClickHandler }) => (
     <div>
       <h1>John C Raiss MD</h1>
       <nav onClick={ navClickHandler }>
-        <button>About</button>
+        <button className="about hi">About</button>
         <button>Services</button>
         <button>FAQ</button>
         <button>Resources</button>

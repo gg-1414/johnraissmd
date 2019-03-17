@@ -1,0 +1,61 @@
+.content > .home__header > span {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding: 0 0 0.6em 0.1em;
+}
+
+.content > .home__header > h1 {
+  font-size: 2.6em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content > .home__description h2 {
+  font-size: 1.7em;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.content > .home__description p,
+.content > .home__message p {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 1.8em;
+  line-height: 1.5;
+}
+
+.content > .home__description ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.content > .home__description ul li {
+  margin: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  background: #f4f4f4;
+  border-radius: 100px;
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
+
+.content > .home__description ul li:nth-child(odd) {
+  background: #1a9b9c;
+}
+
+.content > .home__description ul li:nth-child(odd) a {
+	color: white;
+}
+
+.content > .home__description ul li:nth-child(even) a {
+	color: #1a9b9c;
+}

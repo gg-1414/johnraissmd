@@ -1,0 +1,7 @@
+.content > div,
+.content > section {
+  width: 90%;
+  max-width: 69em;
+  margin: 0 auto;
+  padding: 30px;
+}

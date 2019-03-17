@@ -9,12 +9,44 @@ class App extends Component {
     currentPage: 'Home'
   }
 
-  navClickHandler = ( event ) => {
-    if( event.target.nodeName === 'A' ) {
-      console.log(event.target.innerText)
-      // change state currentPage to event.target.innerText
-    }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
   }
+
+  handleScroll = () => {
+    this.debounce(() => {
+      console.log('hit throttle')
+    }, 300)
+  }
+
+  navClickHandler = ( event ) => {
+    // if( event.target.nodeName === 'A' ) {
+      console.log(event.target.classList)
+      // change state currentPage to event.target.innerText
+    // }
+  }
+
+debounce = (func, wait, immediate) => {
+  var timeout;
+
+  return function executedFunction() {
+    var context = this;
+    var args = arguments;
+
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+
+    var callNow = immediate && !timeout;
+
+    clearTimeout(timeout);
+
+    timeout = setTimeout(later, wait);
+
+    if (callNow) func.apply(context, args);
+  };
+};
 
   render() {
     return (
