@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { throttle, debounce } from 'throttle-debounce';
 import Header from './components/Header';
 import Content from './containers/Content';
 import Footer from './components/Footer';
 import './App.css';
+
 
 class App extends Component {
   state = {
@@ -10,13 +12,18 @@ class App extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('scroll', throttle(300, this.handleScroll))
   }
 
+  // Here lies sticky-shrink header scroll event listener
   handleScroll = () => {
-    this.debounce(() => {
-      console.log('hit throttle')
-    }, 300)
+    let scrollPosition = Math.round(window.scrollY);
+
+    if (scrollPosition > 300){ // if scrolled past 300px, add header--sticky-shrink class
+      document.querySelector('header').classList.add('header--sticky-shrink');
+    } else { // if not, remove header--sticky-shrink class from header
+        document.querySelector('header').classList.remove('header--sticky-shrink');
+    }
   }
 
   navClickHandler = ( event ) => {
@@ -25,28 +32,6 @@ class App extends Component {
       // change state currentPage to event.target.innerText
     // }
   }
-
-debounce = (func, wait, immediate) => {
-  var timeout;
-
-  return function executedFunction() {
-    var context = this;
-    var args = arguments;
-
-    var later = function() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-
-    var callNow = immediate && !timeout;
-
-    clearTimeout(timeout);
-
-    timeout = setTimeout(later, wait);
-
-    if (callNow) func.apply(context, args);
-  };
-};
 
   render() {
     return (

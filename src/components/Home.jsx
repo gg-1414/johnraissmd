@@ -12,12 +12,12 @@ const Home = () => (
       <h2 style={{paddingLeft:'350px'}}>I am a licensed physician who is board certified in two medical specialties: general psychiatry and child & adolescent psychiatry.</h2>
       <p>The disorders I diagnose and treat include:</p>
       <ul>
-          <li><a href="#">Mood Disorders</a></li>
-          <li><a href="#">Anxiety Disorders</a></li>
-          <li><a href="#">Attention Deficit Hyperactivity Disorder</a></li>
-          <li><a href="#">Sleep Problems</a></li>
-          <li><a href="#">Psychotic Disorders</a></li>
-          <li><a href="#">Autistic Spectrum Disorders</a></li>
+        <li><a href="#">Mood Disorders</a></li>
+        <li><a href="#">Anxiety Disorders</a></li>
+        <li><a href="#">Attention Deficit Hyperactivity Disorder</a></li>
+        <li><a href="#">Sleep Problems</a></li>
+        <li><a href="#">Psychotic Disorders</a></li>
+        <li><a href="#">Autistic Spectrum Disorders</a></li>
 			</ul>
     </section>
     <section className="home__message">
