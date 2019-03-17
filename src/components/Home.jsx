@@ -9,7 +9,7 @@ const Home = () => (
       <h1>Child and Adult Psychiatry & Psychopharmacology</h1>
     </div>
     <section className="home__description">
-      <h2 style={{paddingLeft:'350px'}}>I am a licensed physician who is board certified in two medical specialties: general psychiatry and child & adolescent psychiatry.</h2>
+      <h2 style={{ paddingLeft:'350px' }}>I am a licensed physician who is board certified in two medical specialties: general psychiatry and child & adolescent psychiatry.</h2>
       <p>The disorders I diagnose and treat include:</p>
       <ul>
         <li><a href="#">Mood Disorders</a></li>

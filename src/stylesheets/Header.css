@@ -6,6 +6,7 @@ header {
   left: 0;
   width: 100%;
   background: #f4f4f4;
+  box-shadow: 0 0 5px #d5d5d5;
   z-index: 10000;
   height: 180px;
   overflow: hidden;
@@ -61,7 +62,7 @@ header nav button:hover {
 /* Here starts sticky-shrink effect class code */
 
 header.header--sticky-shrink {
-  height: 90px;
+  height: 95px;
 }
 
 header.header--sticky-shrink h1,
@@ -111,7 +112,7 @@ header.header--sticky-shrink h1 {
 
   header.header--sticky-shrink h1 {
     font-size: 2em;
-    padding-top: 2px;
+    padding-top: 5px;
   }
 
   header.header--sticky-shrink nav button {

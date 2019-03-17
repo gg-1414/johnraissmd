@@ -12,17 +12,18 @@ class App extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', throttle(300, this.handleScroll))
+    window.addEventListener('scroll', throttle( 300, this.handleScroll ))
   }
 
   // Here lies sticky-shrink header scroll event listener
   handleScroll = () => {
-    let scrollPosition = Math.round(window.scrollY);
+    console.log('throttled')
+    let scrollPosition = Math.round( window.scrollY );
 
-    if (scrollPosition > 300){ // if scrolled past 300px, add header--sticky-shrink class
-      document.querySelector('header').classList.add('header--sticky-shrink');
+    if (scrollPosition > 250){ // if scrolled past 300px, add header--sticky-shrink class
+      document.querySelector( 'header' ).classList.add( 'header--sticky-shrink' );
     } else { // if not, remove header--sticky-shrink class from header
-        document.querySelector('header').classList.remove('header--sticky-shrink');
+        document.querySelector( 'header' ).classList.remove( 'header--sticky-shrink' );
     }
   }
 

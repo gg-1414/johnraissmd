@@ -1,0 +1,15 @@
+footer {
+	width: 100%;
+	background: #f6f6f6;
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+footer > div {
+	width: 21%;
+	margin-left: 3em;
+}
