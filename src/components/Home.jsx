@@ -25,6 +25,21 @@ const Home = () => (
       <p>I look forward to meeting with you and delivering the highest quality care.</p>
       <p>John C. Raiss, MD</p>
     </section>
+    <section className="home__latestBlogs">
+      <div>
+        <h1>Latest Blog Posts</h1>
+        <div className="home__blogPost">
+          <h4>Thinking about marijuana</h4>
+          <p>A writer asked me to respond to some questions about marijuana. Here’s what I wrote...</p>
+          <p class="read-more-btn">Read more...</p>
+        </div>
+        <div className="home__blogPost">
+          <h4>Stoll redux, or for real?</h4>
+          <p>I just read a potentially practice changing  article in Bipolar Disorders: Adjunctive probiotic microorganisms to prevent rehospitalization in patients with acute mania: A randomized controlled trial, by Dickerson et al...</p>
+          <p class="read-more-btn">Read more...</p>
+        </div>
+      </div>
+    </section>
   </div>
 );
 
