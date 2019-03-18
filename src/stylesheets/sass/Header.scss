@@ -1,0 +1,57 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f4f4f4;
+  box-shadow: 0 0 5px #d5d5d5;
+  z-index: 10000;
+  height: 180px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+
+  div {
+    width: 95%;
+    max-width: 69em;
+    max-width: 85em;
+    margin: 0 auto;
+    padding: 0 1.875em;
+  }
+
+  h1, nav {
+    display: inline-block;
+  }
+
+  h1,
+  nav button {
+    line-height: 180px;
+    -webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+  	transition: all 0.3s;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 4px;
+    font-size: 3.8em;
+    margin: 0;
+  }
+
+  nav {
+    float: right;
+
+    button {
+      color: #aaa;
+      font-weight: 700;
+      margin: 0 0 0 20px;
+      font-size: 1.2em;
+    }
+
+    button:hover {
+      color: #333;
+    }
+  }
+}

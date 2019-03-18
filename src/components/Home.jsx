@@ -31,12 +31,12 @@ const Home = () => (
         <div className="home__blogPost">
           <h4>Thinking about marijuana</h4>
           <p>A writer asked me to respond to some questions about marijuana. Here’s what I wrote...</p>
-          <p class="read-more-btn">Read more...</p>
+          <p className="read-more-btn">Read more...</p>
         </div>
         <div className="home__blogPost">
           <h4>Stoll redux, or for real?</h4>
           <p>I just read a potentially practice changing  article in Bipolar Disorders: Adjunctive probiotic microorganisms to prevent rehospitalization in patients with acute mania: A randomized controlled trial, by Dickerson et al...</p>
-          <p class="read-more-btn">Read more...</p>
+          <p className="read-more-btn">Read more...</p>
         </div>
       </div>
     </section>
